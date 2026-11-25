@@ -1,0 +1,76 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : control_pad
+Version: O-2018.06-SP1
+Date   : Thu Nov 19 13:13:31 2026
+****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   data_e                       3.80           9.02 r        -5.22  (VIOLATED)
+   wr                           3.80           9.02 r        -5.22  (VIOLATED)
+   ld_ac                        3.80           9.01 f        -5.21  (VIOLATED)
+   inc_pc                       3.80           9.01 f        -5.21  (VIOLATED)
+   rd                           3.80           9.00 r        -5.20  (VIOLATED)
+   ld_pc                        3.80           8.97 r        -5.17  (VIOLATED)
+   halt                         3.80           8.89 f        -5.09  (VIOLATED)
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   i_control/state_reg[0]/D     0.17           0.15 f        -0.02  (VIOLATED)
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   opcode[0] (dont_touch)       1.02          14.61         -13.59  (VIOLATED)
+       PORT :  opcode[0]        1.02          14.61         -13.59  (VIOLATED)
+   opcode[1] (dont_touch)       1.02          14.61         -13.59  (VIOLATED)
+       PORT :  opcode[1]        1.02          14.61         -13.59  (VIOLATED)
+   opcode[2] (dont_touch)       1.02          14.61         -13.59  (VIOLATED)
+       PORT :  opcode[2]        1.02          14.61         -13.59  (VIOLATED)
+   rst_                         1.02          14.61         -13.59  (VIOLATED)
+       PORT :  rst_             1.02          14.61         -13.59  (VIOLATED)
+   n16                          1.02           2.94          -1.92  (VIOLATED)
+       PIN :   U37/Y            1.02           2.94          -1.92  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      5                 -56.29  
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   opcode[0] (dont_touch)       0.34           6.71          -6.37  (VIOLATED)
+   opcode[1] (dont_touch)       0.34           6.71          -6.37  (VIOLATED)
+   opcode[2] (dont_touch)       0.34           6.71          -6.37  (VIOLATED)
+   rst_                         0.34           6.71          -6.37  (VIOLATED)
+   n16                          1.71           6.71          -5.00  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      5                 -30.48  
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   control_pad                  0.00       321386.12      -321386.12
+                                                                    (VIOLATED)
+
+
+1

@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : control_pad
+Version: O-2018.06-SP1
+Date   : Thu Nov 19 13:14:32 2026
+****************************************
+
+Operating Conditions: typical_1v2c25   Library: typical_1v2c25
+Wire Load Model Mode: top
+
+  Startpoint: opcode[2] (input port clocked by clk)
+  Endpoint: rd (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   0.1000     0.1000 r
+  opcode[2] (in)                         7.8010     7.9010 r
+  i_opcode_2/C (PI)                      0.1669     8.0680 r
+  i_control/opcode[2] (control)          0.0000     8.0680 r
+  i_control/U22/Y (XOR2X1)               0.1283     8.1963 r
+  i_control/U18/Y (AOI22X1)              0.0596     8.2559 f
+  i_control/U17/Y (NAND3BX1)             0.5086     8.7645 r
+  i_control/rd (control)                 0.0000     8.7645 r
+  i_rd/PAD (PO8)                         0.8733     9.6378 r
+  rd (out)                               0.0000     9.6378 r
+  data arrival time                                 9.6378
+
+  clock clk (rise edge)                 20.0000    20.0000
+  clock network delay (ideal)            0.0000    20.0000
+  clock uncertainty                     -0.2000    19.8000
+  output external delay                 -1.0000    18.8000
+  data required time                               18.8000
+  -----------------------------------------------------------
+  data required time                               18.8000
+  data arrival time                                -9.6378
+  -----------------------------------------------------------
+  slack (MET)                                       9.1622
+
+
+1

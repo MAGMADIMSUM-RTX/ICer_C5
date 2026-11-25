@@ -1,0 +1,10 @@
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Nov 19 14:20 2026
+PASS: control_test, 144 checks
+$finish called from file "verify/section537/control_test.v", line 93.
+$finish at simulation time              2898000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2898000 ps
+CPU Time:      0.120 seconds;       Data structure size:   0.0Mb
+Thu Nov 19 14:20:01 2026

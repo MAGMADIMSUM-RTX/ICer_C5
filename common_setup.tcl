@@ -1,0 +1,5 @@
+set ref_dir [file join $setup_dir ref]
+set ADDITIONAL_SEARCH_PATH [list $ref_dir ./unmapped ./rtl ./scripts]
+set TARGET_LIBRARY_FILES [list [file join $ref_dir typical_1v2c25.db]]
+set IO_LIBRARY_FILE [file join $ref_dir SP013D3_V1p2_typ.db]
+set SYMBOL_LIBRARY_FILES [list [file join $ref_dir smic13g.sdb]]

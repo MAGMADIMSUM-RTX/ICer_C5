@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : area
+Design : control_pad
+Version: O-2018.06-SP1
+Date   : Thu Nov 19 13:14:32 2026
+****************************************
+
+Library(s) Used:
+
+    typical_1v2c25 (File: /home/ICer/asic53/syn_smic/ref/typical_1v2c25.db)
+    SP013D3_V1p2_typ (File: /home/ICer/asic53/syn_smic/ref/SP013D3_V1p2_typ.db)
+
+Number of ports:                           30
+Number of nets:                            70
+Number of cells:                           47
+Number of combinational cells:             43
+Number of sequential cells:                 3
+Number of macros/black boxes:               0
+Number of buf/inv:                          5
+Number of references:                       3
+
+Combinational area:             103626.990598
+Buf/Inv area:                   103441.974000
+Noncombinational area:             101.843998
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                103728.834596
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area             Local cell area
+                                  --------------------  ------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-  Black-
+                                  Total        Total    national     national   boxes   Design
+--------------------------------  -----------  -------  -----------  ---------  ------  ---------
+control_pad                       103728.8346    100.0  103425.0000     0.0000  0.0000  control_pad
+i_control                            303.8346      0.3     201.9906   101.8440  0.0000  control
+--------------------------------  -----------  -------  -----------  ---------  ------  ---------
+Total                                                   103626.9906   101.8440  0.0000
+
+1

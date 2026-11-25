@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : control_pad
+Version: O-2018.06-SP1
+Date   : Thu Nov 19 13:13:39 2026
+****************************************
+
+
+Library(s) Used:
+
+    typical_1v2c25 (File: /home/ICer/asic53/syn_smic/ref/typical_1v2c25.db)
+    SP013D3_V1p2_typ (File: /home/ICer/asic53/syn_smic/ref/SP013D3_V1p2_typ.db)
+
+
+Operating Conditions: typical_1v2c25   Library: typical_1v2c25
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 693.3568 uW   (99%)
+  Net Switching Power  =   5.5213 uW    (1%)
+                         ---------
+Total Dynamic Power    = 698.8782 uW  (100%)
+
+Cell Leakage Power     = 304.0115 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.6889        2.4159e-03        2.9706e+05            0.6916  (  98.92%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       4.0341e-03        7.6403e-04        3.4920e+03        4.8017e-03  (   0.69%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  4.0753e-04        2.3414e-03        3.4595e+03        2.7524e-03  (   0.39%)
+--------------------------------------------------------------------------------------------------
+Total              0.6934 mW     5.5213e-03 mW     3.0401e+05 pW         0.6992 mW
+1

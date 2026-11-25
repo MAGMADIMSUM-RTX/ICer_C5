@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : reference
+Design : control_pad
+Version: O-2018.06-SP1
+Date   : Thu Nov 19 13:14:31 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+PI                 SP013D3_V1p2_typ
+                               6895.000000       6  41370.000000  
+PO8                SP013D3_V1p2_typ
+                               6895.000000       9  62055.000000  
+control                         305.531995       1    305.531995  h, n
+-----------------------------------------------------------------------------
+Total 3 references                                  103730.531995
+1

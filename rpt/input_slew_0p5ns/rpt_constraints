@@ -1,0 +1,58 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : control_pad
+Version: O-2018.06-SP1
+Date   : Thu Nov 19 13:13:39 2026
+****************************************
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   ld_pc_pad (dont_touch)       1.02           2.42          -1.40  (VIOLATED)
+       PIN :   U17/A1           1.02           2.42          -1.40  (VIOLATED)
+       PIN :   U13/Y            1.02           2.42          -1.40  (VIOLATED)
+   wr_pad (dont_touch)          1.02           2.38          -1.36  (VIOLATED)
+       PIN :   U22/Y            1.02           2.38          -1.36  (VIOLATED)
+   ld_ac_pad (dont_touch)       1.02           2.38          -1.36  (VIOLATED)
+       PIN :   U21/Y            1.02           2.38          -1.36  (VIOLATED)
+   data_e_pad (dont_touch)      1.02           2.03          -1.01  (VIOLATED)
+       PIN :   U19/Y            1.02           2.03          -1.01  (VIOLATED)
+   rd_pad (dont_touch)          1.02           2.02          -1.00  (VIOLATED)
+       PIN :   U10/Y            1.02           2.02          -1.00  (VIOLATED)
+   halt_pad (dont_touch)        1.02           1.32          -0.30  (VIOLATED)
+       PIN :   U18/Y            1.02           1.32          -0.30  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      6                  -6.43  
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   ld_pc_pad (dont_touch)       0.04           0.08          -0.04  (VIOLATED)
+   data_e_pad (dont_touch)      0.04           0.08          -0.03  (VIOLATED)
+   halt_pad (dont_touch)        0.04           0.08          -0.03  (VIOLATED)
+   ld_ac_pad (dont_touch)       0.04           0.08          -0.03  (VIOLATED)
+   rd_pad (dont_touch)          0.04           0.08          -0.03  (VIOLATED)
+   wr_pad (dont_touch)          0.04           0.08          -0.03  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      6                  -0.21  
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   control_pad                  0.00       305091.69      -305091.69
+                                                                    (VIOLATED)
+
+
+1

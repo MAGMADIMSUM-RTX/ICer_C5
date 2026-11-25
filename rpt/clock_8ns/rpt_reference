@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : reference
+Design : control_pad
+Version: O-2018.06-SP1
+Date   : Thu Nov 19 13:13:28 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+BUFX20             typical_1v2c25
+                                 28.855801       1     28.855801  
+CLKINVX3           typical_1v2c25
+                                  5.092200       1      5.092200  
+CLKINVX6           typical_1v2c25
+                                  8.487000       1      8.487000  
+DFFRX1             typical_1v2c25
+                                 32.250599       1     32.250599  n
+DFFRX2             typical_1v2c25
+                                 37.342800       1     37.342800  n
+DFFSXL             typical_1v2c25
+                                 30.553200       1     30.553200  n
+INVX8              typical_1v2c25
+                                 10.184400       2     20.368799  
+INVXL              typical_1v2c25
+                                  3.394800       1      3.394800  
+NAND2X1            typical_1v2c25
+                                  5.092200       3     15.276599  
+NAND2X4            typical_1v2c25
+                                 11.881800       1     11.881800  
+NAND2X6            typical_1v2c25
+                                 16.974001       2     33.948002  
+NAND3X6            typical_1v2c25
+                                 25.461000       1     25.461000  
+NAND3X8            typical_1v2c25
+                                 33.948002       2     67.896004  
+NAND4X4            typical_1v2c25
+                                 27.158400       1     27.158400  
+NOR2X1             typical_1v2c25
+                                  5.092200       1      5.092200  
+NOR2X2             typical_1v2c25
+                                  8.487000       2     16.974001  
+NOR2X6             typical_1v2c25
+                                 15.276600       1     15.276600  
+NOR2X8             typical_1v2c25
+                                 20.368799       2     40.737598  
+NOR3X4             typical_1v2c25
+                                 20.368799       1     20.368799  
+NOR3X6             typical_1v2c25
+                                 27.158400       1     27.158400  
+NOR3X8             typical_1v2c25
+                                 33.948002       1     33.948002  
+NOR4X8             typical_1v2c25
+                                 59.409000       1     59.409000  
+OR2X1              typical_1v2c25
+                                  6.789600       1      6.789600  
+PI                 SP013D3_V1p2_typ
+                               6895.000000       6  41370.000000  
+PO8                SP013D3_V1p2_typ
+                               6895.000000       9  62055.000000  
+XNOR2XL            typical_1v2c25
+                                 11.881800       1     11.881800  
+XOR2X4             typical_1v2c25
+                                 30.553200       1     30.553200  
+-----------------------------------------------------------------------------
+Total 27 references                                 104041.156203
+1

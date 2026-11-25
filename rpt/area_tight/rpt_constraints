@@ -1,0 +1,53 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : control_pad
+Version: O-2018.06-SP1
+Date   : Thu Nov 19 13:14:32 2026
+****************************************
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   opcode[0] (dont_touch)       1.02          14.61         -13.59  (VIOLATED)
+       PORT :  opcode[0]        1.02          14.61         -13.59  (VIOLATED)
+   opcode[1] (dont_touch)       1.02          14.61         -13.59  (VIOLATED)
+       PORT :  opcode[1]        1.02          14.61         -13.59  (VIOLATED)
+   opcode[2] (dont_touch)       1.02          14.61         -13.59  (VIOLATED)
+       PORT :  opcode[2]        1.02          14.61         -13.59  (VIOLATED)
+   rst_                         1.02          14.61         -13.59  (VIOLATED)
+       PORT :  rst_             1.02          14.61         -13.59  (VIOLATED)
+   zero                         1.02          14.61         -13.59  (VIOLATED)
+       PORT :  zero             1.02          14.61         -13.59  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      5                 -67.97  
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   opcode[0] (dont_touch)       0.34           6.71          -6.37  (VIOLATED)
+   opcode[1] (dont_touch)       0.34           6.71          -6.37  (VIOLATED)
+   opcode[2] (dont_touch)       0.34           6.71          -6.37  (VIOLATED)
+   rst_                         0.34           6.71          -6.37  (VIOLATED)
+   zero                         0.34           6.71          -6.37  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      5                 -31.84  
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   control_pad              103600.00      103728.84       -128.84  (VIOLATED)
+
+
+1
